@@ -1,0 +1,94 @@
+# Python 虛擬環境
+venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py,cover
+*.so
+*.log
+
+# 環境設定文件
+*.env
+.env.*
+.envrc
+*.config
+*.ini
+*.toml
+*.yaml
+*.yml
+
+# IDE 和編輯器設定
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# 作業系統檔案
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 測試和覆蓋率報告
+.coverage
+.tox/
+nosetests.xml
+pytest_cache/
+htmlcov/
+junit.xml
+
+# 靜態分析工具
+mypy_cache/
+pylint.log
+flake8.log
+pytype/
+
+# 打包相關檔案
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+dist/
+build/
+site/
+pip-wheel-metadata/
+
+# Jupyter Notebook 快取
+.ipynb_checkpoints
+
+# 日誌和暫存
+*.log
+*.out
+*.err
+*.pid
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# 資料庫檔案
+*.sqlite3
+*.db
+*.sql
+*.dump
+
+# 匯出檔案
+*.csv
+*.xls
+*.xlsx
+*.json
+
+# 自動生成的檔案
+generated/
+docs/_build/
+
+# 忽略 secret_key 和敏感資訊
+secret.key
+config.json
+config.yaml
+config.yml
+token.json
+apikey.txt
