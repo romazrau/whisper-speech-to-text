@@ -149,4 +149,8 @@
 4. 測試
     ![image](https://hackmd.io/_uploads/SJ9qJE4Syx.png)
 
-
+## 附錄
+### 轉檔 m4a to mp3
+```bash
+shell_scripts/batch_convert.sh
+```
