@@ -1,11 +1,15 @@
 import openai
 from datetime import datetime
+from helper.file_selector import select_file
 
 start = datetime.now()
 
 client = openai.OpenAI()
 
-audio_file = open("assets/Sonnet_18_William_Shakespeare.mp3", "rb")
+assets_dir = "assets"
+selected_file_path = select_file(assets_dir)
+
+audio_file = open(selected_file_path, "rb")
 transcript = client.audio.transcriptions.create(
     model="whisper-1",
     file=audio_file

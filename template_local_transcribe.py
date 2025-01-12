@@ -1,12 +1,16 @@
 import whisper
 from datetime import datetime
+from helper.file_selector import select_file
 
 start = datetime.now()
 
 model = whisper.load_model("turbo")
 
+assets_dir = "assets"
+selected_file_path = select_file(assets_dir)
+
 # load audio and pad/trim it to fit 30 seconds
-audio = whisper.load_audio("assets/Sonnet_18_William_Shakespeare.mp3")
+audio = whisper.load_audio(selected_file_path)
 audio = whisper.pad_or_trim(audio)
 
 # make log-Mel spectrogram and move to the same device as the model
